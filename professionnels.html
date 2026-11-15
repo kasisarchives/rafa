@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0B0D">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://placehold.co data:; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' mailto: https://formsubmit.co; base-uri 'self'; object-src 'none';">
+  <title>Professionnels de santé | Ra&amp;Fa Healthcare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="viewport-shell" class="immersive-frame">
+
+    <!-- BARRE DE NAVIGATION SUPERIEURE FLOTTANTE -->
+    <header id="floating-header" class="floating-header">
+      <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <a href="index.html" aria-label="Accueil Ra&amp;Fa Healthcare" class="group flex items-center gap-2 sm:gap-2.5 focus:outline-none min-w-0">
+          <span id="header-brand-logo-slot" class="inline-flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] border border-white/80 bg-white/15 font-display text-[10.5px] sm:text-[11px] font-extrabold tracking-tight text-white shadow-[0_2px_12px_rgba(10,11,13,0.42)]">
+              R&amp;F
+            </span>
+          </span>
+
+          <div class="flex flex-col text-left min-w-0">
+            <span id="brand-wordmark" class="truncate font-display text-[12px] sm:text-[13px] font-extrabold tracking-[0.05em] sm:tracking-[0.06em] text-white drop-shadow-[0_2px_10px_rgba(10,11,13,0.5)] leading-tight">Ra&amp;Fa Healthcare</span>
+            <span class="hidden sm:block text-[9.5px] font-medium uppercase tracking-[0.18em] text-white/75 drop-shadow">
+              Santé &amp; Talents
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <nav aria-label="Navigation principale" class="hidden xl:flex items-center nav-pill-wrapper">
+        <a href="index.html" class="nav-pill-link">
+          Accueil
+        </a>
+        <a href="etablissements.html" class="nav-pill-link">
+          Établissements
+        </a>
+        <a href="professionnels.html" class="nav-pill-link active" aria-current="page">
+          Professionnels
+        </a>
+        <a href="notre-solution.html" class="nav-pill-link">
+          Notre solution
+        </a>
+        <a href="contact.html" class="nav-pill-link">
+          Contact
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <button type="button" id="open-search-btn" aria-label="Rechercher un établissement ou une spécialité" class="circle-search-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7.5"></circle>
+            <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+          </svg>
+        </button>
+
+        <button type="button" id="open-menu-btn" aria-label="Ouvrir le menu de navigation" class="pill-menu-btn">
+          MENU
+        </button>
+      </div>
+    </header>
+
+    <!-- ZONE DE CONTENU INTERNE DU CADRE -->
+    <div id="frame-scroll-container" class="immersive-scroll-area custom-scroll">
+
+      <main id="view-professionnels" class="view-section min-h-full bg-[#FAFAFA] text-[#0A0B0D]">
+        <div class="relative overflow-hidden bg-[#0A0B0D] px-5 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 md:px-12 text-white">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Professionnels de santé Ra&amp;Fa Healthcare" class="absolute inset-0 h-full w-full object-cover opacity-30">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0A0B0D] via-[#0A0B0D]/65 to-black/50"></div>
+
+          <div class="relative z-10 mx-auto max-w-7xl flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl">
+              <span class="inline-block rounded-full border border-white/25 bg-white/10 px-3.5 py-1 font-display text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] backdrop-blur-md">
+                PROFESSIONNELS DE SANTÉ • ACCÈS LIBRE SANS COMPTE
+              </span>
+              <h1 class="inner-hero-title mt-3.5 font-display font-bold">
+                Votre carrière, selon vos priorités.
+              </h1>
+              <p class="mt-3.5 max-w-2xl text-sm md:text-base leading-relaxed text-white/80">
+                Consultez librement l’ensemble des établissements et opportunités disponibles sans créer de compte. Filtrez selon votre spécialité et votre rythme uniquement si vous le souhaitez.
+              </p>
+            </div>
+
+            <div class="w-full sm:w-auto">
+              <a href="contact.html?mode=professionnel" class="cta-glass-pill w-full sm:w-auto justify-center">
+                <span>Contacter l'équipe Ra&amp;Fa</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-5 py-9 sm:px-8 sm:py-12 md:px-12 space-y-10 sm:space-y-14">
+          <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-6 sm:p-8 md:p-11 shadow-sm flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+            <blockquote class="font-display text-xl sm:text-3xl md:text-4xl font-bold tracking-[-0.02em] leading-tight text-[#0A0B0D] max-w-3xl">
+              “Je choisis les opportunités qui me ressemblent.”
+            </blockquote>
+            <div class="flex items-center gap-3 self-start md:self-center shrink-0 rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 sm:px-5 sm:py-3.5">
+              <div class="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl bg-[#0A0B0D] font-display text-xs sm:text-sm font-extrabold tracking-tight text-white">
+                R&amp;Fa
+              </div>
+              <div class="text-xs">
+                <span class="block font-display font-bold text-[#0A0B0D]">Consultation libre</span>
+                <span class="text-neutral-500">Aucun compte requis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+            <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-6 sm:p-7 shadow-sm">
+              <span class="inline-flex rounded-full bg-[#0A0B0D] px-3 py-1 font-display text-xs font-bold text-white">01</span>
+              <h2 class="mt-3.5 sm:mt-4 font-display text-base sm:text-lg font-bold tracking-tight">
+                01. Visibilité totale sans inscription
+              </h2>
+              <p class="mt-2 text-xs sm:text-sm leading-relaxed text-neutral-600">
+                Parcourez tous les établissements partenaires et toutes les spécialités immédiatement, sans formulaire obligatoire ni création de compte préalable.
+              </p>
+            </div>
+
+            <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-6 sm:p-7 shadow-sm">
+              <span class="inline-flex rounded-full bg-[#0A0B0D] px-3 py-1 font-display text-xs font-bold text-white">02</span>
+              <h2 class="mt-3.5 sm:mt-4 font-display text-base sm:text-lg font-bold tracking-tight">
+                02. Des opportunités sélectionnées
+              </h2>
+              <p class="mt-2 text-xs sm:text-sm leading-relaxed text-neutral-600">
+                Filtrez les établissements selon vos critères réels : spécialité, planning, cadre de travail et localisation géographique.
+              </p>
+            </div>
+
+            <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-6 sm:p-7 shadow-sm">
+              <span class="inline-flex rounded-full bg-[#0A0B0D] px-3 py-1 font-display text-xs font-bold text-white">03</span>
+              <h2 class="mt-3.5 sm:mt-4 font-display text-base sm:text-lg font-bold tracking-tight">
+                03. Vous choisissez qui peut vous contacter
+              </h2>
+              <p class="mt-2 text-xs sm:text-sm leading-relaxed text-neutral-600">
+                Aucune sollicitation non désirée : vous initiez l'échange uniquement lorsqu'un établissement correspond à vos attentes.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-5 sm:p-7 md:p-10 shadow-sm space-y-5 sm:space-y-7">
+            <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between border-b border-[#0A0B0D]/10 pb-5 sm:pb-6">
+              <div>
+                <span class="font-display text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.15em] text-neutral-400">
+                  EXPLORATEUR D'OPPORTUNITÉS • VUE COMPLÈTE
+                </span>
+                <h2 class="mt-1 font-display text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
+                  Toutes les opportunités par spécialité et rythme
+                </h2>
+              </div>
+
+              <div class="filter-pill-rail" id="rhythm-selector" role="group" aria-label="Filtrer par rythme">
+                <button type="button" data-rhythm="Tous les rythmes" class="pro-rhythm-btn shrink-0 rounded-full bg-[#0A0B0D] px-3.5 py-2 font-display text-xs font-semibold text-white cursor-pointer">
+                  Tous les rythmes
+                </button>
+                <button type="button" data-rhythm="Temps plein • CDI" class="pro-rhythm-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-3.5 py-2 font-display text-xs font-medium text-[#0A0B0D] hover:bg-neutral-100 cursor-pointer">
+                  Temps plein • CDI
+                </button>
+                <button type="button" data-rhythm="Journées 12h / Roulement" class="pro-rhythm-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-3.5 py-2 font-display text-xs font-medium text-[#0A0B0D] hover:bg-neutral-100 cursor-pointer">
+                  Journées 12h / Roulement
+                </button>
+                <button type="button" data-rhythm="Temps partiel / Vacation" class="pro-rhythm-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-3.5 py-2 font-display text-xs font-medium text-[#0A0B0D] hover:bg-neutral-100 cursor-pointer">
+                  Temps partiel / Vacation
+                </button>
+              </div>
+            </div>
+
+            <div class="filter-pill-rail" id="specialty-selector" role="group" aria-label="Filtrer par spécialité">
+              <button type="button" data-spec="Toutes les spécialités" class="pro-spec-btn shrink-0 rounded-full bg-[#0A0B0D] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-bold text-white shadow-sm transition cursor-pointer">
+                Toutes les spécialités
+              </button>
+              <button type="button" data-spec="Infirmière DE" class="pro-spec-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-semibold text-[#0A0B0D] hover:bg-neutral-100 transition cursor-pointer">
+                Infirmière DE
+              </button>
+              <button type="button" data-spec="Aide-soignant" class="pro-spec-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-semibold text-[#0A0B0D] hover:bg-neutral-100 transition cursor-pointer">
+                Aide-soignant
+              </button>
+              <button type="button" data-spec="Masseur-Kinésithérapeute" class="pro-spec-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-semibold text-[#0A0B0D] hover:bg-neutral-100 transition cursor-pointer">
+                Masseur-Kinésithérapeute
+              </button>
+              <button type="button" data-spec="Cadre de santé" class="pro-spec-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-semibold text-[#0A0B0D] hover:bg-neutral-100 transition cursor-pointer">
+                Cadre de santé
+              </button>
+              <button type="button" data-spec="Médecin" class="pro-spec-btn shrink-0 rounded-full border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 sm:px-5 py-2 sm:py-2.5 font-display text-xs font-semibold text-[#0A0B0D] hover:bg-neutral-100 transition cursor-pointer">
+                Médecin
+              </button>
+            </div>
+
+            <div id="pro-matches-container" class="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
+
+            <div class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center justify-between gap-4 border-t border-[#0A0B0D]/10 pt-5 sm:pt-6">
+              <p class="text-xs sm:text-sm text-neutral-600">
+                Affichage : <strong id="pro-selected-summary" class="text-[#0A0B0D]">Toutes les spécialités</strong> • Consultation libre sans compte requis.
+              </p>
+              <a id="pro-join-cta" href="contact.html?mode=professionnel" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0A0B0D] px-6 sm:px-7 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800">
+                <span>Échanger avec un conseiller Ra&amp;Fa</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <footer class="border-t border-[#0A0B0D]/10 pt-8 pb-6 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between text-xs text-neutral-500">
+            <div class="flex items-start sm:items-center gap-3.5">
+              <span class="footer-brand-logo-slot inline-flex h-8 w-8 shrink-0 items-center justify-center">
+                <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] bg-[#0A0B0D] font-display text-[10.5px] font-extrabold tracking-tight text-white">
+                  R&amp;F
+                </span>
+              </span>
+              <div>
+                <p id="footer-baseline-text" class="font-display font-semibold text-[#0A0B0D]">Rapprocher les talents et les besoins pour mieux prendre soin.</p>
+                <p class="mt-1">
+                  © 2026 <span class="brand-sync">Ra&amp;Fa Healthcare</span>. Tous droits réservés.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2.5 font-medium">
+              <a href="index.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Accueil</a>
+              <a href="etablissements.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Établissements</a>
+              <a href="professionnels.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Professionnels</a>
+              <a href="notre-solution.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Notre solution</a>
+              <a href="contact.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Contact</a>
+              <button type="button" data-legal-type="mentions" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline cursor-pointer">
+                Mentions légales
+              </button>
+              <button type="button" data-legal-type="confidentialite" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline cursor-pointer">
+                Confidentialité
+              </button>
+            </div>
+          </footer>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- OVERLAY DE RECHERCHE INSTANTANEE -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden items-start justify-center bg-[#0A0B0D]/55 p-3 sm:p-4 pt-4 sm:pt-20 backdrop-blur-md">
+    <div class="w-full max-w-xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 text-[#0A0B0D] shadow-2xl border border-[#0A0B0D]/10">
+      <div class="flex items-center gap-2.5 sm:gap-3 border-b border-[#0A0B0D]/10 pb-3 sm:pb-4">
+        <svg class="h-5 w-5 shrink-0 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="11" cy="11" r="7.5"></circle>
+          <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+        </svg>
+        <input type="text" id="search-input" maxlength="80" placeholder="Rechercher un établissement, une spécialité..." class="responsive-input w-full bg-transparent text-[#0A0B0D] placeholder-neutral-400 focus:outline-none">
+        <button type="button" id="close-search-btn" class="shrink-0 rounded-full bg-neutral-100 px-3 py-1.5 font-display text-xs font-semibold hover:bg-neutral-200 cursor-pointer">
+          ESC
+        </button>
+      </div>
+      <div id="search-results-list" class="mt-3 sm:mt-4 max-h-[58dvh] sm:max-h-80 overflow-y-auto custom-scroll space-y-2"></div>
+    </div>
+  </div>
+
+  <!-- TIROIR LATERAL DROIT DE NAVIGATION -->
+  <div id="menu-drawer-backdrop" class="fixed inset-0 z-50 hidden bg-[#0A0B0D]/45 backdrop-blur-sm"></div>
+  <aside id="menu-drawer" aria-label="Menu mobile et secondaire" class="drawer-panel fixed top-0 right-0 z-50 flex h-full w-full max-w-md translate-x-full flex-col justify-between overflow-y-auto bg-white p-6 sm:p-8 text-[#0A0B0D] shadow-2xl transition-transform duration-300 ease-out">
+    <div>
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span id="drawer-brand-logo-slot" class="inline-flex h-8 w-8 shrink-0 items-center justify-center">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] bg-[#0A0B0D] font-display text-[10.5px] font-extrabold tracking-tight text-white">
+              R&amp;F
+            </span>
+          </span>
+          <span class="brand-sync font-display text-xs font-extrabold tracking-[0.14em] uppercase text-[#0A0B0D]">Ra&amp;Fa Healthcare</span>
+        </a>
+        <button type="button" id="close-menu-btn" aria-label="Fermer le menu" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#0A0B0D]/15 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <nav class="mt-7 sm:mt-9 flex flex-col space-y-2">
+        <a href="index.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Accueil</span>
+            <span class="text-[11px] font-medium text-neutral-400">Vue d'ensemble</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="etablissements.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Établissements</span>
+            <span class="text-[11px] font-medium text-neutral-400">Partenaires & besoins</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="professionnels.html" class="drawer-nav-link is-active" aria-current="page">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Professionnels</span>
+            <span class="text-[11px] font-medium text-neutral-400">Opportunités libres</span>
+          </span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+        <a href="notre-solution.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Notre solution</span>
+            <span class="text-[11px] font-medium text-neutral-400">Méthodologie</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="contact.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Contact</span>
+            <span class="text-[11px] font-medium text-neutral-400">Échange confidentiel</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="mt-6 space-y-4 border-t border-[#0A0B0D]/10 pt-5">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="contact.html?mode=etablissement" class="rounded-full bg-[#0A0B0D] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-white hover:bg-neutral-800 transition">
+          Établissement →
+        </a>
+        <a href="contact.html?mode=professionnel" class="rounded-full border border-[#0A0B0D]/20 bg-[#FAFAFA] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-[#0A0B0D] hover:bg-neutral-100 transition">
+          Professionnel →
+        </a>
+      </div>
+      <div>
+        <p id="drawer-baseline" class="text-xs leading-relaxed text-neutral-600">Rapprocher les talents et les besoins pour mieux prendre soin.</p>
+        <p id="drawer-email" class="mt-1 font-display text-xs font-bold text-[#0A0B0D]">contact@rafa-healthcare.fr</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODALE FICHE DETAILLEE D'UN ETABLISSEMENT -->
+  <div id="etab-detail-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-3xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-etab-modal-btn" aria-label="Fermer la fiche" class="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-[#0A0B0D] shadow-md hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-6 relative h-52 sm:h-64 md:h-auto">
+          <img id="modal-etab-img" src="" alt="Établissement de santé" class="h-full w-full object-cover">
+          <span id="modal-etab-cat" class="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 rounded-full bg-white/95 px-3.5 py-1 font-display text-[11px] font-bold text-[#0A0B0D] shadow">
+            Catégorie
+          </span>
+        </div>
+
+        <div class="md:col-span-6 p-5 sm:p-7 md:p-8 flex flex-col justify-between space-y-5">
+          <div>
+            <p id="modal-etab-loc" class="font-display text-xs font-semibold uppercase tracking-wider text-neutral-400">Ville</p>
+            <h3 id="modal-etab-title" class="mt-1 font-display text-xl sm:text-2xl font-bold tracking-tight">Nom</h3>
+            <p id="modal-etab-desc" class="mt-2.5 sm:mt-3 text-sm leading-relaxed text-neutral-600">Description</p>
+
+            <div class="mt-4 sm:mt-5 border-t border-[#0A0B0D]/10 pt-4">
+              <span class="block font-display text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-2">
+                Besoins &amp; profils recherchés
+              </span>
+              <div id="modal-etab-badges" class="flex flex-wrap gap-1.5"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <a id="modal-etab-cta" href="contact.html?mode=etablissement" class="w-full text-center rounded-full bg-[#0A0B0D] py-3.5 px-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-neutral-800 transition">
+              Parler de mon besoin →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE MENTIONS LEGALES & CONFIDENTIALITE -->
+  <div id="legal-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white p-6 sm:p-7 md:p-9 text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-legal-modal-btn" aria-label="Fermer" class="absolute top-4 right-4 sm:top-5 sm:right-5 flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+      <span class="font-display text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-400">INFORMATION RÉGLEMENTAIRE</span>
+      <h3 id="legal-modal-title" class="mt-1.5 font-display text-xl sm:text-2xl font-bold">Mentions légales</h3>
+      <div id="legal-modal-body" class="mt-4 space-y-3 text-sm leading-relaxed text-neutral-600"></div>
+    </div>
+  </div>
+
+</body>
+</html>

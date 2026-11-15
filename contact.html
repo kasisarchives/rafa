@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0B0D">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://placehold.co data:; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' mailto: https://formsubmit.co; base-uri 'self'; object-src 'none';">
+  <title>Contact | Ra&amp;Fa Healthcare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="viewport-shell" class="immersive-frame">
+
+    <!-- BARRE DE NAVIGATION SUPERIEURE FLOTTANTE -->
+    <header id="floating-header" class="floating-header">
+      <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <a href="index.html" aria-label="Accueil Ra&amp;Fa Healthcare" class="group flex items-center gap-2 sm:gap-2.5 focus:outline-none min-w-0">
+          <span id="header-brand-logo-slot" class="inline-flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] border border-white/80 bg-white/15 font-display text-[10.5px] sm:text-[11px] font-extrabold tracking-tight text-white shadow-[0_2px_12px_rgba(10,11,13,0.42)]">
+              R&amp;F
+            </span>
+          </span>
+
+          <div class="flex flex-col text-left min-w-0">
+            <span id="brand-wordmark" class="truncate font-display text-[12px] sm:text-[13px] font-extrabold tracking-[0.05em] sm:tracking-[0.06em] text-white drop-shadow-[0_2px_10px_rgba(10,11,13,0.5)] leading-tight">Ra&amp;Fa Healthcare</span>
+            <span class="hidden sm:block text-[9.5px] font-medium uppercase tracking-[0.18em] text-white/75 drop-shadow">
+              Santé &amp; Talents
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <nav aria-label="Navigation principale" class="hidden xl:flex items-center nav-pill-wrapper">
+        <a href="index.html" class="nav-pill-link">
+          Accueil
+        </a>
+        <a href="etablissements.html" class="nav-pill-link">
+          Établissements
+        </a>
+        <a href="professionnels.html" class="nav-pill-link">
+          Professionnels
+        </a>
+        <a href="notre-solution.html" class="nav-pill-link">
+          Notre solution
+        </a>
+        <a href="contact.html" class="nav-pill-link active" aria-current="page">
+          Contact
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <button type="button" id="open-search-btn" aria-label="Rechercher un établissement ou une spécialité" class="circle-search-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7.5"></circle>
+            <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+          </svg>
+        </button>
+
+        <button type="button" id="open-menu-btn" aria-label="Ouvrir le menu de navigation" class="pill-menu-btn">
+          MENU
+        </button>
+      </div>
+    </header>
+
+    <!-- ZONE DE CONTENU INTERNE DU CADRE -->
+    <div id="frame-scroll-container" class="immersive-scroll-area custom-scroll">
+
+      <main id="view-contact" class="view-section min-h-full bg-[#FAFAFA] text-[#0A0B0D]">
+        <div class="relative overflow-hidden bg-[#0A0B0D] px-5 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 md:px-12 text-white">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Contact Ra&amp;Fa Healthcare" class="absolute inset-0 h-full w-full object-cover opacity-30">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0A0B0D] via-[#0A0B0D]/70 to-black/50"></div>
+
+          <div class="relative z-10 mx-auto max-w-7xl flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl">
+              <span class="inline-block rounded-full border border-white/25 bg-white/10 px-3.5 py-1 font-display text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.16em] backdrop-blur-md">
+                UNE QUESTION, UN BESOIN ?
+              </span>
+              <h1 class="inner-hero-title mt-3.5 font-display font-bold">
+                Et si la prochaine belle rencontre commençait ici ?
+              </h1>
+              <p class="mt-3.5 max-w-2xl text-sm md:text-base leading-relaxed text-white/80">
+                Parlez-nous de votre recherche. Notre équipe vous répondra avec attention.
+              </p>
+            </div>
+
+            <div class="w-full sm:w-auto">
+              <button type="button" id="copy-email-btn" class="cta-glass-pill w-full sm:w-auto justify-center lowercase-pill" title="Copier l'adresse email">
+                <span id="contact-pill-email" class="break-all">contact@rafa-healthcare.fr</span>
+                <span class="cta-arrow shrink-0">→</span>
+              </button>
+              <p id="email-copied-hint" class="mt-2 hidden text-center sm:text-right text-xs font-medium text-white/90">
+                ✓ Adresse copiée dans le presse-papiers
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-5 py-9 sm:px-8 sm:py-12 md:px-12 space-y-10 sm:space-y-14">
+          <div class="grid grid-cols-1 gap-7 sm:gap-10 lg:grid-cols-12">
+            <div class="lg:col-span-5 space-y-6">
+              <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-6 sm:p-8 shadow-sm space-y-5 sm:space-y-6">
+                <div>
+                  <span class="font-display text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-400">
+                    ACCOMPAGNEMENT DÉDIÉ
+                  </span>
+                  <h2 class="mt-2 font-display text-xl sm:text-2xl font-bold tracking-tight">
+                    Une écoute attentive, confidentielle et humaine.
+                  </h2>
+                  <p class="mt-2.5 text-sm leading-relaxed text-neutral-600">
+                    Que vous dirigiez un établissement de santé ou que vous prépariez la prochaine étape de votre parcours soignant, chaque demande est étudiée individuellement.
+                  </p>
+                </div>
+
+                <div class="space-y-3 border-t border-[#0A0B0D]/10 pt-5 text-sm">
+                  <div class="flex flex-wrap items-center justify-between gap-1.5">
+                    <span class="text-neutral-500">Email direct</span>
+                    <a id="contact-direct-mailto" href="mailto:contact@rafa-healthcare.fr" class="font-display font-bold text-[#0A0B0D] underline-offset-4 hover:underline break-all">contact@rafa-healthcare.fr</a>
+                  </div>
+                  <div class="flex flex-wrap items-center justify-between gap-1.5">
+                    <span class="text-neutral-500">Délai de réponse</span>
+                    <span class="font-semibold text-[#0A0B0D]">Sous 24h ouvrées</span>
+                  </div>
+                  <div class="flex flex-wrap items-center justify-between gap-1.5">
+                    <span class="text-neutral-500">Confidentialité</span>
+                    <span class="font-semibold text-[#0A0B0D]">100 % garantie</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="rounded-2xl sm:rounded-3xl border border-[#0A0B0D]/10 bg-white p-5 sm:p-7 md:p-10 shadow-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 rounded-2xl bg-[#FAFAFA] p-1.5 border border-[#0A0B0D]/10 mb-6 sm:mb-7">
+                  <button type="button" id="mode-btn-etablissement" data-contact-mode="etablissement" class="rounded-xl bg-[#0A0B0D] px-4 py-3 font-display text-xs font-bold text-white shadow-sm transition cursor-pointer text-center">
+                    Établissement de santé (Exprimer un besoin)
+                  </button>
+                  <button type="button" id="mode-btn-professionnel" data-contact-mode="professionnel" class="rounded-xl px-4 py-3 font-display text-xs font-semibold text-neutral-600 hover:text-[#0A0B0D] transition cursor-pointer text-center">
+                    Professionnel de santé (Prendre contact)
+                  </button>
+                </div>
+
+                <!-- FORMULAIRE MODE 1 : ETABLISSEMENT DE SANTE -->
+                <form id="form-etablissement" class="space-y-4 sm:space-y-5" novalidate>
+                  <div class="hp-guard-field" aria-hidden="true">
+                    <label for="etab-hp-trap">Ne pas remplir ce champ</label>
+                    <input type="text" id="etab-hp-trap" name="website_confirm" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="etab-form-name" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Nom de l'établissement *</label>
+                      <input type="text" id="etab-form-name" name="etablissement" required maxlength="120" placeholder="Ex. Clinique des Tilleuls" class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                    <div>
+                      <label for="etab-form-contact" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Votre nom &amp; fonction *</label>
+                      <input type="text" id="etab-form-contact" name="contact_nom" required maxlength="120" placeholder="Dr Claire Martin, Directrice des soins" class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="etab-form-email" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Email professionnel *</label>
+                      <input type="email" id="etab-form-email" name="email" required maxlength="150" placeholder="direction@etablissement-sante.fr" class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                    <div>
+                      <label for="etab-form-need" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Profil(s) recherché(s) *</label>
+                      <input type="text" id="etab-form-need" name="profils_recherches" required maxlength="200" placeholder="Infirmière DE, Aide-soignant, Kiné, Médecin..." class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="etab-form-message" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Précisions sur votre besoin &amp; conditions *</label>
+                    <textarea id="etab-form-message" name="message" rows="4" required maxlength="2000" placeholder="Service concerné, rythme horaire, date de prise de poste souhaitée, cadre de travail..." class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none"></textarea>
+                  </div>
+
+                  <button type="submit" id="etab-submit-btn" class="inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full bg-[#0A0B0D] px-6 sm:px-7 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800 cursor-pointer text-center leading-snug">
+                    <span>Transmettre le besoin à contact@rafa-healthcare.fr</span>
+                    <span class="shrink-0">→</span>
+                  </button>
+                </form>
+
+                <!-- FORMULAIRE MODE 2 : PROFESSIONNEL DE SANTE -->
+                <form id="form-professionnel" class="hidden space-y-4 sm:space-y-5" novalidate>
+                  <div class="hp-guard-field" aria-hidden="true">
+                    <label for="pro-hp-trap">Ne pas remplir ce champ</label>
+                    <input type="text" id="pro-hp-trap" name="website_confirm" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="pro-form-name" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Prénom &amp; Nom *</label>
+                      <input type="text" id="pro-form-name" name="nom_complet" required maxlength="120" placeholder="Votre prénom et nom" class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                    <div>
+                      <label for="pro-form-email" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Email personnel *</label>
+                      <input type="email" id="pro-form-email" name="email" required maxlength="150" placeholder="votre.email@domaine.fr" class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="pro-form-specialty" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Votre spécialité / diplôme *</label>
+                      <select id="pro-form-specialty" name="specialite" required class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                        <option value="" selected>Sélectionner votre spécialité...</option>
+                        <option value="Infirmière DE">Infirmière DE</option>
+                        <option value="Aide-soignant">Aide-soignant</option>
+                        <option value="Masseur-Kinésithérapeute">Masseur-Kinésithérapeute</option>
+                        <option value="Cadre de santé">Cadre de santé</option>
+                        <option value="Médecin">Médecin</option>
+                        <option value="Autre spécialité santé">Autre spécialité santé</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="pro-form-rhythm" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Rythme &amp; disponibilité souhaités</label>
+                      <input type="text" id="pro-form-rhythm" name="disponibilite" maxlength="150" placeholder="Ex. Temps plein, 12h, temps partiel, vacation..." class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none">
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="pro-form-message" class="block font-display text-xs font-semibold text-neutral-700 mb-1.5">Vos priorités professionnelles *</label>
+                    <textarea id="pro-form-message" name="priorites" rows="4" required maxlength="2000" placeholder="Établissement qui vous intéresse, secteur géographique, rythme souhaité..." class="responsive-input w-full rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] px-4 py-3 focus:border-[#0A0B0D] focus:bg-white focus:outline-none"></textarea>
+                  </div>
+
+                  <button type="submit" id="pro-submit-btn" class="inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full bg-[#0A0B0D] px-6 sm:px-7 py-3.5 font-display text-xs font-bold uppercase tracking-wider text-white transition hover:bg-neutral-800 cursor-pointer text-center leading-snug">
+                    <span>Envoyer ma demande à contact@rafa-healthcare.fr</span>
+                    <span class="shrink-0">→</span>
+                  </button>
+                </form>
+
+                <!-- Feedback de validation ou d'erreur securite -->
+                <div id="contact-feedback-banner" class="mt-6 hidden rounded-2xl border border-[#0A0B0D]/15 bg-[#FAFAFA] p-4 sm:p-5 text-sm text-[#0A0B0D]">
+                  <div class="flex items-start gap-3">
+                    <span id="contact-feedback-icon" class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0A0B0D] text-xs font-bold text-white">✓</span>
+                    <div class="space-y-2 flex-1 min-w-0">
+                      <p class="font-display font-bold" id="contact-feedback-title">Votre demande a bien été préparée.</p>
+                      <p class="text-xs leading-relaxed text-neutral-600 break-words" id="contact-feedback-desc">
+                        Destinataire : contact@rafa-healthcare.fr
+                      </p>
+                      <div id="contact-mailto-fallback-wrap" class="hidden pt-1">
+                        <a id="contact-mailto-fallback-link" href="mailto:contact@rafa-healthcare.fr" class="inline-flex items-center gap-1.5 rounded-full bg-[#0A0B0D] px-4 py-2 font-display text-xs font-bold text-white hover:bg-neutral-800 transition">
+                          <span>Finaliser l'envoi via ma messagerie</span>
+                          <span>→</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="border-t border-[#0A0B0D]/10 pt-8 pb-6 flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between text-xs text-neutral-500">
+            <div class="flex items-start sm:items-center gap-3.5">
+              <span class="footer-brand-logo-slot inline-flex h-8 w-8 shrink-0 items-center justify-center">
+                <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] bg-[#0A0B0D] font-display text-[10.5px] font-extrabold tracking-tight text-white">
+                  R&amp;F
+                </span>
+              </span>
+              <div>
+                <p id="footer-baseline-text" class="font-display font-semibold text-[#0A0B0D]">Rapprocher les talents et les besoins pour mieux prendre soin.</p>
+                <p class="mt-1">
+                  © 2026 <span class="brand-sync">Ra&amp;Fa Healthcare</span>. Tous droits réservés.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2.5 font-medium">
+              <a href="index.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Accueil</a>
+              <a href="etablissements.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Établissements</a>
+              <a href="professionnels.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Professionnels</a>
+              <a href="notre-solution.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Notre solution</a>
+              <a href="contact.html" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline">Contact</a>
+              <button type="button" data-legal-type="mentions" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline cursor-pointer">
+                Mentions légales
+              </button>
+              <button type="button" data-legal-type="confidentialite" class="hover:text-[#0A0B0D] underline-offset-4 hover:underline cursor-pointer">
+                Confidentialité
+              </button>
+            </div>
+          </footer>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- OVERLAY DE RECHERCHE INSTANTANEE -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden items-start justify-center bg-[#0A0B0D]/55 p-3 sm:p-4 pt-4 sm:pt-20 backdrop-blur-md">
+    <div class="w-full max-w-xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 text-[#0A0B0D] shadow-2xl border border-[#0A0B0D]/10">
+      <div class="flex items-center gap-2.5 sm:gap-3 border-b border-[#0A0B0D]/10 pb-3 sm:pb-4">
+        <svg class="h-5 w-5 shrink-0 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="11" cy="11" r="7.5"></circle>
+          <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+        </svg>
+        <input type="text" id="search-input" maxlength="80" placeholder="Rechercher un établissement, une spécialité..." class="responsive-input w-full bg-transparent text-[#0A0B0D] placeholder-neutral-400 focus:outline-none">
+        <button type="button" id="close-search-btn" class="shrink-0 rounded-full bg-neutral-100 px-3 py-1.5 font-display text-xs font-semibold hover:bg-neutral-200 cursor-pointer">
+          ESC
+        </button>
+      </div>
+      <div id="search-results-list" class="mt-3 sm:mt-4 max-h-[58dvh] sm:max-h-80 overflow-y-auto custom-scroll space-y-2"></div>
+    </div>
+  </div>
+
+  <!-- TIROIR LATERAL DROIT DE NAVIGATION -->
+  <div id="menu-drawer-backdrop" class="fixed inset-0 z-50 hidden bg-[#0A0B0D]/45 backdrop-blur-sm"></div>
+  <aside id="menu-drawer" aria-label="Menu mobile et secondaire" class="drawer-panel fixed top-0 right-0 z-50 flex h-full w-full max-w-md translate-x-full flex-col justify-between overflow-y-auto bg-white p-6 sm:p-8 text-[#0A0B0D] shadow-2xl transition-transform duration-300 ease-out">
+    <div>
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span id="drawer-brand-logo-slot" class="inline-flex h-8 w-8 shrink-0 items-center justify-center">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] bg-[#0A0B0D] font-display text-[10.5px] font-extrabold tracking-tight text-white">
+              R&amp;F
+            </span>
+          </span>
+          <span class="brand-sync font-display text-xs font-extrabold tracking-[0.14em] uppercase text-[#0A0B0D]">Ra&amp;Fa Healthcare</span>
+        </a>
+        <button type="button" id="close-menu-btn" aria-label="Fermer le menu" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#0A0B0D]/15 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <nav class="mt-7 sm:mt-9 flex flex-col space-y-2">
+        <a href="index.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Accueil</span>
+            <span class="text-[11px] font-medium text-neutral-400">Vue d'ensemble</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="etablissements.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Établissements</span>
+            <span class="text-[11px] font-medium text-neutral-400">Partenaires & besoins</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="professionnels.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Professionnels</span>
+            <span class="text-[11px] font-medium text-neutral-400">Opportunités libres</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="notre-solution.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Notre solution</span>
+            <span class="text-[11px] font-medium text-neutral-400">Méthodologie</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="contact.html" class="drawer-nav-link is-active" aria-current="page">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Contact</span>
+            <span class="text-[11px] font-medium text-neutral-400">Échange confidentiel</span>
+          </span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="mt-6 space-y-4 border-t border-[#0A0B0D]/10 pt-5">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="contact.html?mode=etablissement" class="rounded-full bg-[#0A0B0D] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-white hover:bg-neutral-800 transition">
+          Établissement →
+        </a>
+        <a href="contact.html?mode=professionnel" class="rounded-full border border-[#0A0B0D]/20 bg-[#FAFAFA] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-[#0A0B0D] hover:bg-neutral-100 transition">
+          Professionnel →
+        </a>
+      </div>
+      <div>
+        <p id="drawer-baseline" class="text-xs leading-relaxed text-neutral-600">Rapprocher les talents et les besoins pour mieux prendre soin.</p>
+        <p id="drawer-email" class="mt-1 font-display text-xs font-bold text-[#0A0B0D]">contact@rafa-healthcare.fr</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODALE FICHE DETAILLEE D'UN ETABLISSEMENT -->
+  <div id="etab-detail-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-3xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-etab-modal-btn" aria-label="Fermer la fiche" class="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-[#0A0B0D] shadow-md hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-6 relative h-52 sm:h-64 md:h-auto">
+          <img id="modal-etab-img" src="" alt="Établissement de santé" class="h-full w-full object-cover">
+          <span id="modal-etab-cat" class="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 rounded-full bg-white/95 px-3.5 py-1 font-display text-[11px] font-bold text-[#0A0B0D] shadow">
+            Catégorie
+          </span>
+        </div>
+
+        <div class="md:col-span-6 p-5 sm:p-7 md:p-8 flex flex-col justify-between space-y-5">
+          <div>
+            <p id="modal-etab-loc" class="font-display text-xs font-semibold uppercase tracking-wider text-neutral-400">Ville</p>
+            <h3 id="modal-etab-title" class="mt-1 font-display text-xl sm:text-2xl font-bold tracking-tight">Nom</h3>
+            <p id="modal-etab-desc" class="mt-2.5 sm:mt-3 text-sm leading-relaxed text-neutral-600">Description</p>
+
+            <div class="mt-4 sm:mt-5 border-t border-[#0A0B0D]/10 pt-4">
+              <span class="block font-display text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-2">
+                Besoins &amp; profils recherchés
+              </span>
+              <div id="modal-etab-badges" class="flex flex-wrap gap-1.5"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <a id="modal-etab-cta" href="contact.html?mode=etablissement" class="w-full text-center rounded-full bg-[#0A0B0D] py-3.5 px-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-neutral-800 transition">
+              Parler de mon besoin →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE MENTIONS LEGALES & CONFIDENTIALITE -->
+  <div id="legal-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white p-6 sm:p-7 md:p-9 text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-legal-modal-btn" aria-label="Fermer" class="absolute top-4 right-4 sm:top-5 sm:right-5 flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+      <span class="font-display text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-400">INFORMATION RÉGLEMENTAIRE</span>
+      <h3 id="legal-modal-title" class="mt-1.5 font-display text-xl sm:text-2xl font-bold">Mentions légales</h3>
+      <div id="legal-modal-body" class="mt-4 space-y-3 text-sm leading-relaxed text-neutral-600"></div>
+    </div>
+  </div>
+
+</body>
+</html>

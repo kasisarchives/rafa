@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0B0D">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://placehold.co data:; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' mailto: https://formsubmit.co; base-uri 'self'; object-src 'none';">
+  <title>Ra&amp;Fa Healthcare : Le bon professionnel, au bon endroit.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="viewport-shell" class="immersive-frame">
+
+    <!-- BARRE DE NAVIGATION SUPERIEURE FLOTTANTE -->
+    <header id="floating-header" class="floating-header">
+      <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <a href="index.html" aria-label="Accueil Ra&amp;Fa Healthcare" class="group flex items-center gap-2 sm:gap-2.5 focus:outline-none min-w-0">
+          <span id="header-brand-logo-slot" class="inline-flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] border border-white/80 bg-white/15 font-display text-[10.5px] sm:text-[11px] font-extrabold tracking-tight text-white shadow-[0_2px_12px_rgba(10,11,13,0.42)]">
+              R&amp;F
+            </span>
+          </span>
+
+          <div class="flex flex-col text-left min-w-0">
+            <span id="brand-wordmark" class="truncate font-display text-[12px] sm:text-[13px] font-extrabold tracking-[0.05em] sm:tracking-[0.06em] text-white drop-shadow-[0_2px_10px_rgba(10,11,13,0.5)] leading-tight">Ra&amp;Fa Healthcare</span>
+            <span class="hidden sm:block text-[9.5px] font-medium uppercase tracking-[0.18em] text-white/75 drop-shadow">
+              Santé &amp; Talents
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <nav aria-label="Navigation principale" class="hidden xl:flex items-center nav-pill-wrapper">
+        <a href="index.html" class="nav-pill-link active" aria-current="page">
+          Accueil
+        </a>
+        <a href="etablissements.html" class="nav-pill-link">
+          Établissements
+        </a>
+        <a href="professionnels.html" class="nav-pill-link">
+          Professionnels
+        </a>
+        <a href="notre-solution.html" class="nav-pill-link">
+          Notre solution
+        </a>
+        <a href="contact.html" class="nav-pill-link">
+          Contact
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        <button type="button" id="open-search-btn" aria-label="Rechercher un établissement ou une spécialité" class="circle-search-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7.5"></circle>
+            <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+          </svg>
+        </button>
+
+        <button type="button" id="open-menu-btn" aria-label="Ouvrir le menu de navigation" class="pill-menu-btn">
+          MENU
+        </button>
+      </div>
+    </header>
+
+    <!-- ZONE DE CONTENU INTERNE DU CADRE -->
+    <div id="frame-scroll-container" class="immersive-scroll-area is-hero-locked custom-scroll">
+
+      <!-- VUE ACCUEIL -->
+      <main id="view-accueil" class="view-section w-full min-h-full lg:h-full">
+        <section class="hero-stage px-5 pb-6 pt-20 sm:px-7 sm:pb-8 sm:pt-24 md:px-9 md:pb-9">
+          <img
+            id="hero-bg-img"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=90"
+            data-fallback="https://placehold.co/1920x1080/0A0B0D/FFFFFF?text=Ra%26Fa+Healthcare"
+            alt="Pavillon médical contemporain verre et bois Ra&amp;Fa Healthcare"
+            fetchpriority="high"
+            class="hero-bg-photo"
+          >
+
+          <div class="hero-readability-gradient"></div>
+
+          <div class="relative z-10 mt-auto flex flex-col gap-6 sm:gap-7 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 sm:px-3.5 py-1.5 backdrop-blur-md">
+                <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white"></span>
+                <span id="hero-eyebrow" class="font-display text-[9.5px] sm:text-[11px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-white">LA RENCONTRE QUI FAIT DU BIEN À LA SANTÉ</span>
+              </div>
+
+              <h1 id="hero-h1" class="hero-title-fluid mt-3.5 sm:mt-4 font-display text-white font-bold drop-shadow-[0_2px_22px_rgba(10,11,13,0.28)]">Le bon professionnel,<br>au bon endroit.</h1>
+
+              <p id="hero-subtitle" class="mt-3 sm:mt-3.5 text-[14px] sm:text-[16px] leading-[1.6] text-white/90 font-normal max-w-xl drop-shadow-[0_1px_12px_rgba(10,11,13,0.3)]">Ra&amp;Fa Healthcare rapproche les établissements de santé et les professionnels qui partagent les mêmes attentes, simplement, rapidement et humainement.</p>
+
+              <div class="mt-5 sm:mt-6 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
+                <a href="etablissements.html" class="cta-glass-pill justify-center sm:justify-start">
+                  <span id="hero-cta-label">JE RECHERCHE UN PROFESSIONNEL</span>
+                  <span class="cta-arrow text-base leading-none">→</span>
+                </a>
+
+                <a href="professionnels.html" class="group inline-flex items-center justify-center sm:justify-start gap-1.5 px-2 py-2 font-display text-[13px] sm:text-[13.5px] font-semibold text-white/95 underline-offset-4 hover:text-white hover:underline transition">
+                  <span>Explorer toutes les opportunités</span>
+                  <span class="transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </a>
+              </div>
+
+              <div class="mt-5 sm:mt-6 flex flex-wrap items-center gap-x-5 sm:gap-x-6 gap-y-2 border-t border-white/15 pt-3.5 sm:pt-4 text-[11.5px] sm:text-[12.5px] font-medium text-white/85">
+                <span>✓ Accès libre sans compte</span>
+                <span>✓ Échanges confidentiels</span>
+                <span>✓ Accompagnement humain</span>
+              </div>
+            </div>
+
+            <div class="hero-cards-stack">
+              <a href="etablissements.html" class="block card-etablissements-preview group" title="Explorer tous les établissements partenaires">
+                <img
+                  id="card-etab-img"
+                  src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85"
+                  data-fallback="https://placehold.co/660x370/0A0B0D/FFFFFF?text=Etablissements+partenaires"
+                  alt="Architecture clinique partenaire Ra&amp;Fa Healthcare"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0A0B0D]/75 via-[#0A0B0D]/15 to-transparent"></div>
+
+                <div class="absolute top-3 left-3">
+                  <span class="inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 font-display text-[11px] font-bold text-[#0A0B0D] shadow-md">
+                    <span class="h-1.5 w-1.5 rounded-full bg-[#0A0B0D]"></span>
+                    <span>6 établissements ouverts</span>
+                  </span>
+                </div>
+
+                <div class="absolute bottom-3.5 left-4 right-4 flex items-center justify-between text-white">
+                  <span class="font-display text-[13.5px] sm:text-[14px] font-semibold tracking-tight drop-shadow">
+                    Établissements partenaires →
+                  </span>
+                </div>
+              </a>
+
+              <div id="cycle-candidate-card" role="button" tabindex="0" class="card-compatible-profile" title="Faire défiler les spécialités et opportunités ouvertes">
+                <img
+                  id="candidate-card-thumb"
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80"
+                  data-fallback="https://placehold.co/200x200/0A0B0D/FFFFFF?text=R%26Fa"
+                  alt="Établissement associé à l'opportunité"
+                  class="h-[50px] w-[50px] sm:h-[54px] sm:w-[54px] min-w-[50px] sm:min-w-[54px] rounded-[14px] object-cover border border-black/10"
+                >
+                <div id="candidate-card-text-wrap" class="min-w-0 flex-1 leading-snug transition-opacity duration-200">
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-display text-[10.5px] sm:text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#0A0B0D]">
+                      Opportunités ouvertes
+                    </span>
+                    <span id="candidate-card-counter" class="rounded-full bg-[#0A0B0D]/8 px-1.5 py-0.5 text-[10px] font-bold text-[#0A0B0D]/70">
+                      1/4
+                    </span>
+                  </div>
+                  <div id="candidate-card-subtitle" class="mt-0.5 truncate text-[12px] sm:text-[12.5px] font-medium text-neutral-700">
+                    Toutes spécialités • Consultation libre sans compte
+                  </div>
+                </div>
+                <div class="card-next-arrow-btn" aria-hidden="true">
+                  <span class="text-sm leading-none">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- OVERLAY DE RECHERCHE INSTANTANEE -->
+  <div id="search-modal" class="fixed inset-0 z-50 hidden items-start justify-center bg-[#0A0B0D]/55 p-3 sm:p-4 pt-4 sm:pt-20 backdrop-blur-md">
+    <div class="w-full max-w-xl rounded-2xl sm:rounded-3xl bg-white p-4 sm:p-6 text-[#0A0B0D] shadow-2xl border border-[#0A0B0D]/10">
+      <div class="flex items-center gap-2.5 sm:gap-3 border-b border-[#0A0B0D]/10 pb-3 sm:pb-4">
+        <svg class="h-5 w-5 shrink-0 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="11" cy="11" r="7.5"></circle>
+          <line x1="20.5" y1="20.5" x2="16.35" y2="16.35"></line>
+        </svg>
+        <input type="text" id="search-input" maxlength="80" placeholder="Rechercher un établissement, une spécialité..." class="responsive-input w-full bg-transparent text-[#0A0B0D] placeholder-neutral-400 focus:outline-none">
+        <button type="button" id="close-search-btn" class="shrink-0 rounded-full bg-neutral-100 px-3 py-1.5 font-display text-xs font-semibold hover:bg-neutral-200 cursor-pointer">
+          ESC
+        </button>
+      </div>
+      <div id="search-results-list" class="mt-3 sm:mt-4 max-h-[58dvh] sm:max-h-80 overflow-y-auto custom-scroll space-y-2"></div>
+    </div>
+  </div>
+
+  <!-- TIROIR LATERAL DROIT DE NAVIGATION -->
+  <div id="menu-drawer-backdrop" class="fixed inset-0 z-50 hidden bg-[#0A0B0D]/45 backdrop-blur-sm"></div>
+  <aside id="menu-drawer" aria-label="Menu mobile et secondaire" class="drawer-panel fixed top-0 right-0 z-50 flex h-full w-full max-w-md translate-x-full flex-col justify-between overflow-y-auto bg-white p-6 sm:p-8 text-[#0A0B0D] shadow-2xl transition-transform duration-300 ease-out">
+    <div>
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span id="drawer-brand-logo-slot" class="inline-flex h-8 w-8 shrink-0 items-center justify-center">
+            <span class="inline-flex h-full w-full items-center justify-center rounded-[10px] bg-[#0A0B0D] font-display text-[10.5px] font-extrabold tracking-tight text-white">
+              R&amp;F
+            </span>
+          </span>
+          <span class="brand-sync font-display text-xs font-extrabold tracking-[0.14em] uppercase text-[#0A0B0D]">Ra&amp;Fa Healthcare</span>
+        </a>
+        <button type="button" id="close-menu-btn" aria-label="Fermer le menu" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#0A0B0D]/15 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+          ✕
+        </button>
+      </div>
+
+      <nav class="mt-7 sm:mt-9 flex flex-col space-y-2">
+        <a href="index.html" class="drawer-nav-link is-active" aria-current="page">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Accueil</span>
+            <span class="text-[11px] font-medium text-neutral-400">Vue d'ensemble</span>
+          </span>
+          <span class="drawer-active-dot" aria-hidden="true"></span>
+        </a>
+        <a href="etablissements.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Établissements</span>
+            <span class="text-[11px] font-medium text-neutral-400">Partenaires & besoins</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="professionnels.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Professionnels</span>
+            <span class="text-[11px] font-medium text-neutral-400">Opportunités libres</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="notre-solution.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Notre solution</span>
+            <span class="text-[11px] font-medium text-neutral-400">Méthodologie</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="contact.html" class="drawer-nav-link">
+          <span class="flex flex-col">
+            <span class="font-display text-xl sm:text-2xl font-bold tracking-tight">Contact</span>
+            <span class="text-[11px] font-medium text-neutral-400">Échange confidentiel</span>
+          </span>
+          <span class="drawer-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="mt-6 space-y-4 border-t border-[#0A0B0D]/10 pt-5">
+      <div class="grid grid-cols-2 gap-2">
+        <a href="contact.html?mode=etablissement" class="rounded-full bg-[#0A0B0D] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-white hover:bg-neutral-800 transition">
+          Établissement →
+        </a>
+        <a href="contact.html?mode=professionnel" class="rounded-full border border-[#0A0B0D]/20 bg-[#FAFAFA] px-3.5 py-2.5 text-center font-display text-[11px] font-bold text-[#0A0B0D] hover:bg-neutral-100 transition">
+          Professionnel →
+        </a>
+      </div>
+      <div>
+        <p id="drawer-baseline" class="text-xs leading-relaxed text-neutral-600">Rapprocher les talents et les besoins pour mieux prendre soin.</p>
+        <p id="drawer-email" class="mt-1 font-display text-xs font-bold text-[#0A0B0D]">contact@rafa-healthcare.fr</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODALE FICHE DETAILLEE D'UN ETABLISSEMENT -->
+  <div id="etab-detail-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-3xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-etab-modal-btn" aria-label="Fermer la fiche" class="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-[#0A0B0D] shadow-md hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-6 relative h-52 sm:h-64 md:h-auto">
+          <img id="modal-etab-img" src="" alt="Établissement de santé" class="h-full w-full object-cover">
+          <span id="modal-etab-cat" class="absolute bottom-3.5 left-3.5 sm:bottom-4 sm:left-4 rounded-full bg-white/95 px-3.5 py-1 font-display text-[11px] font-bold text-[#0A0B0D] shadow">
+            Catégorie
+          </span>
+        </div>
+
+        <div class="md:col-span-6 p-5 sm:p-7 md:p-8 flex flex-col justify-between space-y-5">
+          <div>
+            <p id="modal-etab-loc" class="font-display text-xs font-semibold uppercase tracking-wider text-neutral-400">Ville</p>
+            <h3 id="modal-etab-title" class="mt-1 font-display text-xl sm:text-2xl font-bold tracking-tight">Nom</h3>
+            <p id="modal-etab-desc" class="mt-2.5 sm:mt-3 text-sm leading-relaxed text-neutral-600">Description</p>
+
+            <div class="mt-4 sm:mt-5 border-t border-[#0A0B0D]/10 pt-4">
+              <span class="block font-display text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-2">
+                Besoins &amp; profils recherchés
+              </span>
+              <div id="modal-etab-badges" class="flex flex-wrap gap-1.5"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <a id="modal-etab-cta" href="contact.html?mode=etablissement" class="w-full text-center rounded-full bg-[#0A0B0D] py-3.5 px-4 font-display text-xs font-bold uppercase tracking-wider text-white hover:bg-neutral-800 transition">
+              Parler de mon besoin →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE MENTIONS LEGALES & CONFIDENTIALITE -->
+  <div id="legal-modal" class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-[#0A0B0D]/60 p-0 sm:p-4 backdrop-blur-md">
+    <div class="modal-sheet relative w-full max-w-xl overflow-y-auto custom-scroll rounded-t-3xl sm:rounded-3xl bg-white p-6 sm:p-7 md:p-9 text-[#0A0B0D] shadow-2xl">
+      <button type="button" id="close-legal-modal-btn" aria-label="Fermer" class="absolute top-4 right-4 sm:top-5 sm:right-5 flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 hover:bg-[#0A0B0D] hover:text-white transition cursor-pointer">
+        ✕
+      </button>
+      <span class="font-display text-[11px] font-bold uppercase tracking-[0.16em] text-neutral-400">INFORMATION RÉGLEMENTAIRE</span>
+      <h3 id="legal-modal-title" class="mt-1.5 font-display text-xl sm:text-2xl font-bold">Mentions légales</h3>
+      <div id="legal-modal-body" class="mt-4 space-y-3 text-sm leading-relaxed text-neutral-600"></div>
+    </div>
+  </div>
+
+</body>
+</html>
